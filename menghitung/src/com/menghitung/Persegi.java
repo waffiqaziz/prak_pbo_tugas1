@@ -1,6 +1,6 @@
 package com.menghitung;
 
-public class Persegi extends bangunDatar {
+public class Persegi extends BangunDatar {
   
   public Persegi(int x2) {
     super(x2);

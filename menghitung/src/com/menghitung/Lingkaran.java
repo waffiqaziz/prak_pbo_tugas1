@@ -1,6 +1,6 @@
 package com.menghitung;
 
-public class Lingkaran extends bangunDatar {
+public class Lingkaran extends BangunDatar {
 
   Lingkaran(int x2) {
     super(x2);
