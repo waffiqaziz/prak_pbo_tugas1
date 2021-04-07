@@ -1,7 +1,7 @@
 package com.menghitung;
 
-public class persegiPanjang extends bangunDatar {
-  persegiPanjang(int x, int y) {
+public class PersegiPanjang extends BangunDatar {
+  PersegiPanjang(int x, int y) {
     super(x, y);
   }
 

@@ -1,16 +1,16 @@
 package com.menghitung;
 
-public class bangunDatar {
+public class BangunDatar {
   int x;
   int y;
   // x & y bisa berupa alas, panjang, tinggi maupun sisi
 
-  public bangunDatar(int x, int y) { // untuk bangun datar segitiga, persegi panjang
+  public BangunDatar(int x, int y) { // untuk bangun datar segitiga, persegi panjang
     this.x = x;
     this.y = y;
   }
 
-  public bangunDatar(int x2) { // untuk bangun datar persegi, lingkaran
+  public BangunDatar(int x2) { // untuk bangun datar persegi, lingkaran
     this.x = x2;
   }
 
