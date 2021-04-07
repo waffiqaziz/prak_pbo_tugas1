@@ -1,6 +1,6 @@
 package com.menghitung;
 
-public class BangunDatar {
+public abstract class BangunDatar {
   int x;
   int y;
   // x & y bisa berupa alas, panjang, tinggi maupun sisi
@@ -14,13 +14,14 @@ public class BangunDatar {
     this.x = x2;
   }
 
-  double luas() {
-    // --setiap bangun datar memiliki perhitungan keliling masing-masing
-    return 0;
-  }
+  abstract double luas();
+  // --setiap bangun datar memiliki perhitungan keliling masing-masing
 
-  double keliling() {
-    // --setiap bangun datar memiliki perhitungan keliling masing-masing
-    return 0;
+  abstract double keliling();
+  // --setiap bangun datar memiliki perhitungan keliling masing-masing
+
+  void display(){
+    System.out.println("Luas\t\t: " + luas());
+    System.out.println("Keliling\t: " + keliling());
   }
 }
