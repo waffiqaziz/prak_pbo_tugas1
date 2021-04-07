@@ -28,13 +28,13 @@ public class Main {
   public static void main(String[] args) {
     int pilihan = 0;
     int x, y, z;
-    bangunDatar segitiga1, persegi1, persegiPanjang1, lingkaran1;
+    BangunDatar segitiga1, persegi1, persegiPanjang1, lingkaran1;
 
     do {
       CLC();
       System.out.println("\nPILIH BANGUN DATAR ATAU BANGUN RUANG DIBAWAH INI");
       System.out.println("1. Segitiga siku siku\n2. Persegi\n3. Persegi panjang");
-      System.out.println("4. Lingkaran\n5. Kubus\n6. Balok\n6. Silinder\n7. Keluar");
+      System.out.println("4. Lingkaran\n5. Kubus\n6. Balok\n7. Silinder\n8. Keluar");
 
       do {
         pilihan = getUserInput("PILIHAN : ");
@@ -47,42 +47,47 @@ public class Main {
         segitiga1 = new Segitiga(x, y);
 
         System.out.println("\n-----HASIL PERHITUNGAN-----");
-        System.out.println("Luas\t\t: " + segitiga1.luas());
-        System.out.println("Keliling\t: " + segitiga1.keliling());
+        segitiga1.display();
         break;
       case 2: // PERSEGI
         x = getUserInput("Sisi Persegi\t:");
         persegi1 = new Persegi(x);
 
         System.out.println("\n-----HASIL PERHITUNGAN-----");
-        System.out.println("Luas\t\t: " + persegi1.luas());
-        System.out.println("Keliling\t: " + persegi1.keliling());
+        persegi1.display();
         break;
       case 3: // PERSEGI PANJANG
         x = getUserInput("Lebar persegi panjang\t:");
         y = getUserInput("Panjang persegi panjang\t:");
-        persegiPanjang1 = new persegiPanjang(x,y);
+        persegiPanjang1 = new PersegiPanjang(x,y);
 
         System.out.println("\n-----HASIL PERHITUNGAN-----");
-        System.out.println("Luas\t\t: " + persegiPanjang1.luas());
-        System.out.println("Keliling\t: " + persegiPanjang1.keliling());
+        persegiPanjang1.display();
         break;
       case 4: // LINGKARAN
         x = getUserInput("Jari-jari lingkaran\t:");
         lingkaran1 = new Lingkaran(x);
 
         System.out.println("\n-----HASIL PERHITUNGAN-----");
-        System.out.println("Luas\t\t: " + lingkaran1.luas());
-        System.out.println("Keliling\t: " + lingkaran1.keliling());
+        lingkaran1.display();
         break;
-      case 5:
+      case 5: // KUBUS
+        x = getUserInput("Lebar persegi panjang\t:");
+        y = getUserInput("Panjang persegi panjang\t:");
+        persegiPanjang1 = new PersegiPanjang(x,y);
+
+        System.out.println("\n-----HASIL PERHITUNGAN-----");
+        // System.out.println("Luas\t\t: " + persegiPanjang1.luas());
+        // System.out.println("Keliling\t: " + persegiPanjang1.keliling());
         break;
-      case 6:
+      case 6: // BALOK
         break;
-      case 7:
+      case 7: // SILINDER
         break;
+      case 8:
+        System.out.println("\nTerima kasih :D");
       }
-    } while (pilihan != 7);
+    } while (pilihan != 8);
 
   }
 
