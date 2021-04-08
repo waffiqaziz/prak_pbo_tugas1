@@ -2,7 +2,7 @@ package com.menghitung;
 
 public abstract class BangunRuang {
   int x, y, z;
-  // x, y & z bisa berupa alas, panjang, tinggi maupun sisi
+  // x, y & z bisa berupa alas, panjang, tinggi maupun sisi bangun ruang
 
   public BangunRuang(int x) {
     this.x = x;

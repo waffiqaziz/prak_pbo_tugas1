@@ -4,6 +4,7 @@ public class Segitiga extends BangunDatar {
 
   Segitiga(int x, int y) {
     super(x, y);
+    // x = alas, y = tinggi
   }
 
   @Override

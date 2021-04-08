@@ -4,6 +4,7 @@ public class Balok extends BangunRuang{
 
   public Balok(int x,int y,int z) {
     super(x,y,z);
+    // x = lebar balok, y = panjang balok, z = tinggi balok
   }
 
   @Override

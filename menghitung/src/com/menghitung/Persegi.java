@@ -2,9 +2,9 @@ package com.menghitung;
 
 public class Persegi extends BangunDatar {
   
-  public Persegi(int x2) {
-    super(x2);
-    //TODO Auto-generated constructor stub
+  public Persegi(int x) {
+    super(x);
+    // x = sisi persegi
   }
 
   @Override

@@ -4,7 +4,7 @@ public class Silinder extends BangunRuang {
 
   public Silinder(int x, int y) {
     super(x, y);
-    // x = jari-jari, y = tinggi silinder
+    // x = jari-jari alas, y = tinggi silinder
   }
 
   @Override

@@ -4,6 +4,7 @@ public class Kubus extends BangunRuang {
 
   public Kubus(int x) {
     super(x);
+    // x = sisi
   }
 
   @Override

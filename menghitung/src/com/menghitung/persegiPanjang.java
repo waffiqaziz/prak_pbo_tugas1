@@ -3,6 +3,7 @@ package com.menghitung;
 public class PersegiPanjang extends BangunDatar {
   PersegiPanjang(int x, int y) {
     super(x, y);
+    // x = lebar, y = panjang
   }
 
   @Override

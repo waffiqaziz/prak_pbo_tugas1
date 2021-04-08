@@ -4,7 +4,7 @@ public class Lingkaran extends BangunDatar {
 
   Lingkaran(int x) {
     super(x);
-    // x = jari-jari
+    // x = jari-jari lingkaran
   }
 
   @Override
