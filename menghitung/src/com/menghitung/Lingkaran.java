@@ -2,9 +2,9 @@ package com.menghitung;
 
 public class Lingkaran extends BangunDatar {
 
-  Lingkaran(int x2) {
-    super(x2);
-    // TODO Auto-generated constructor stub
+  Lingkaran(int x) {
+    super(x);
+    // x = jari-jari
   }
 
   @Override
