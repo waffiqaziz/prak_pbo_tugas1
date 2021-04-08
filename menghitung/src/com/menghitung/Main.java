@@ -29,7 +29,7 @@ public class Main {
     int pilihan = 0;
     int x, y, z;
     BangunDatar segitiga1, persegi1, persegiPanjang1, lingkaran1;
-
+    BangunRuang kubus1, balok1, silinder1;
     do {
       CLC();
       System.out.println("\nPILIH BANGUN DATAR ATAU BANGUN RUANG DIBAWAH INI");
@@ -72,17 +72,28 @@ public class Main {
         lingkaran1.display();
         break;
       case 5: // KUBUS
-        x = getUserInput("Lebar persegi panjang\t:");
-        y = getUserInput("Panjang persegi panjang\t:");
-        persegiPanjang1 = new PersegiPanjang(x,y);
+        x = getUserInput("Sisi kubus\t:");
+        kubus1 = new Kubus(x);
 
         System.out.println("\n-----HASIL PERHITUNGAN-----");
-        // System.out.println("Luas\t\t: " + persegiPanjang1.luas());
-        // System.out.println("Keliling\t: " + persegiPanjang1.keliling());
+        kubus1.display();
         break;
       case 6: // BALOK
+        x = getUserInput("Lebar balok\t:");
+        y = getUserInput("Panjang balok\t:");
+        z = getUserInput("Tinggi balok\t:");
+        balok1 = new Balok(x,y,z);
+
+        System.out.println("\n-----HASIL PERHITUNGAN-----");
+        balok1.display();
         break;
       case 7: // SILINDER
+        x = getUserInput("Jari-jari silinder\t:");
+        y = getUserInput("Tinggi silinder\t\t:");
+        silinder1 = new Silinder(x,y);
+
+        System.out.println("\n-----HASIL PERHITUNGAN-----");
+        silinder1.display();
         break;
       case 8:
         System.out.println("\nTerima kasih :D");
