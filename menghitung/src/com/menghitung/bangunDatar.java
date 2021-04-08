@@ -15,12 +15,12 @@ public abstract class BangunDatar {
   }
 
   abstract double luas();
-  // --setiap bangun datar memiliki perhitungan keliling masing-masing
+  // --setiap bangun datar memiliki perhitungan luas masing-masing
 
   abstract double keliling();
   // --setiap bangun datar memiliki perhitungan keliling masing-masing
 
-  void display(){
+  void display() {
     System.out.println("Luas\t\t: " + luas());
     System.out.println("Keliling\t: " + keliling());
   }
