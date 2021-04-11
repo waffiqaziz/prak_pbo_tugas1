@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /* GUIDE 
   PILIHAN MENU :
-    segitiga
+    segitiga siku siku
     persegi 
     persegi panjang  
     lingkaran 
@@ -18,7 +18,7 @@ import java.util.Scanner;
   CONTOH OUTPUT
     kubus >>>
       luas persegi =
-      keliling perseegi =
+      keliling persegi =
       volume kubus = 
       luas permukaan kubus =
 */
@@ -30,6 +30,7 @@ public class Main {
     int x, y, z;
     BangunDatar segitiga1, persegi1, persegiPanjang1, lingkaran1;
     BangunRuang kubus1, balok1, silinder1;
+
     do {
       CLC();
       System.out.println("\nPILIH BANGUN DATAR ATAU BANGUN RUANG DIBAWAH INI");
@@ -37,69 +38,77 @@ public class Main {
       System.out.println("4. Lingkaran\n5. Kubus\n6. Balok\n7. Silinder\n8. Keluar");
 
       do {
-        pilihan = getUserInput("PILIHAN : ");
+        pilihan = getUserInput("PILIHAN\t: ");
       } while (pilihan == 0);
+      System.out.println(" ");
 
       switch (pilihan) {
       case 1: // SEGITIGA
-        x = getUserInput("Alas Segitiga\t:");
-        y = getUserInput("Tinggi Segitiga\t: ");
+        x = getUserInput("Alas segitiga\t: ");
+        y = getUserInput("Tinggi segitiga\t: ");
         segitiga1 = new Segitiga(x, y);
 
-        System.out.println("\n-----HASIL PERHITUNGAN-----");
-        segitiga1.display();
+        hasil("SEGITIGA SIKU SIKU");
+        segitiga1.display("Segitiga");
         break;
       case 2: // PERSEGI
-        x = getUserInput("Sisi Persegi\t:");
+        x = getUserInput("Sisi Persegi\t: ");
         persegi1 = new Persegi(x);
 
-        System.out.println("\n-----HASIL PERHITUNGAN-----");
-        persegi1.display();
+        hasil("PERSEGI");
+        persegi1.display("Persegi");
         break;
       case 3: // PERSEGI PANJANG
-        x = getUserInput("Lebar persegi panjang\t:");
-        y = getUserInput("Panjang persegi panjang\t:");
-        persegiPanjang1 = new PersegiPanjang(x,y);
+        x = getUserInput("Lebar persegi panjang\t: ");
+        y = getUserInput("Panjang persegi panjang\t: ");
+        persegiPanjang1 = new PersegiPanjang(x, y);
 
-        System.out.println("\n-----HASIL PERHITUNGAN-----");
-        persegiPanjang1.display();
+        hasil("PERSEGI PANJANG");
+        persegiPanjang1.display("Persegi Panjang");
         break;
       case 4: // LINGKARAN
-        x = getUserInput("Jari-jari lingkaran\t:");
+        x = getUserInput("Jari-jari lingkaran\t: ");
         lingkaran1 = new Lingkaran(x);
 
-        System.out.println("\n-----HASIL PERHITUNGAN-----");
-        lingkaran1.display();
+        hasil("LINGKARAN");
+        lingkaran1.display("Lingkaran");
         break;
       case 5: // KUBUS
-        x = getUserInput("Sisi kubus\t:");
+        x = getUserInput("Sisi kubus\t: ");
         kubus1 = new Kubus(x);
+        persegi1 = new Persegi(x);
 
-        System.out.println("\n-----HASIL PERHITUNGAN-----");
-        kubus1.display();
+        hasil("KUBUS");
+        persegi1.display("Persegi");
+        kubus1.display("Kubus");
         break;
       case 6: // BALOK
-        x = getUserInput("Lebar balok\t:");
-        y = getUserInput("Panjang balok\t:");
-        z = getUserInput("Tinggi balok\t:");
-        balok1 = new Balok(x,y,z);
+        x = getUserInput("Lebar balok\t: ");
+        y = getUserInput("Panjang balok\t: ");
+        z = getUserInput("Tinggi balok\t: ");
+        balok1 = new Balok(x, y, z);
 
-        System.out.println("\n-----HASIL PERHITUNGAN-----");
-        balok1.display();
+        hasil("BALOK");
+        persegiPanjang1 = new PersegiPanjang(x, y);
+        persegiPanjang1.display("Persegi Panjang 1");
+        persegiPanjang1 = new PersegiPanjang(x, z);
+        persegiPanjang1.display("Persegi Panjang 2");
+        persegiPanjang1 = new PersegiPanjang(z, y);
+        persegiPanjang1.display("Persegi Panjang 3");
+        balok1.display("Balok");
         break;
       case 7: // SILINDER
-        x = getUserInput("Jari-jari silinder\t:");
-        y = getUserInput("Tinggi silinder\t\t:");
-        silinder1 = new Silinder(x,y);
+        x = getUserInput("Jari-jari silinder\t: ");
+        y = getUserInput("Tinggi silinder\t\t: ");
+        silinder1 = new Silinder(x, y);
 
-        System.out.println("\n-----HASIL PERHITUNGAN-----");
-        silinder1.display();
+        hasil("SILINDER");
+        silinder1.display(" ");
         break;
       case 8:
         System.out.println("\nTerima kasih :D");
       }
     } while (pilihan != 8);
-
   }
 
   private static void CLC() { // clear screen, LINK : https://stackoverflow.com/a/17015039/12159309
@@ -132,5 +141,9 @@ public class Main {
       }
     }
     return pilihan;
+  }
+
+  private static void hasil(String namaBangun) {
+    System.out.println("\n-----HASIL PERHITUNGAN " + namaBangun + "-----");
   }
 }

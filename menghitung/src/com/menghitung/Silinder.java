@@ -17,4 +17,12 @@ public class Silinder extends BangunRuang {
     return Math.PI * x * x * y;
   }
 
+  @Override
+  void display(String nama) {
+    System.out.println("Luas Atap dan Alas Silinder\t: " + 2 * Math.PI * x * x);
+    System.out.println("Luas Selimut Silinder\t\t: " + 2 * Math.PI * x * y);
+    System.out.println("Luas Permukaan Silinder\t\t: " + luas());
+    System.out.println("Volume Silinder\t\t\t: " + volume());
+  }
+
 }
