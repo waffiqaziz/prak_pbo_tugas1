@@ -20,8 +20,8 @@ public abstract class BangunDatar {
   abstract double keliling();
   // --setiap bangun datar memiliki perhitungan keliling masing-masing
 
-  void display() {
-    System.out.println("Luas\t\t: " + luas());
-    System.out.println("Keliling\t: " + keliling());
+  void display(String namaBangunDatar) {
+    System.out.println("Luas " + namaBangunDatar + "\t\t: " + luas());
+    System.out.println("Keliling " + namaBangunDatar + "\t: " + keliling());
   }
 }

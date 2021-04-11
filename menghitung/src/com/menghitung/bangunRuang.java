@@ -23,9 +23,9 @@ public abstract class BangunRuang {
 
   abstract double volume();
 
-  void display() {
-    System.out.println("Luas\t: " + luas());
-    System.out.println("Volume\t: " + volume());
+  void display(String namaBangunRuang) {
+    System.out.println("Luas Permukaan " + namaBangunRuang + "\t: " + luas());
+    System.out.println("Volume " + namaBangunRuang + "\t\t: " + volume());
   }
 
 }
