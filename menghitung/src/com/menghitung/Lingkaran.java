@@ -7,6 +7,11 @@ public class Lingkaran extends BangunDatar {
     // x = jari-jari lingkaran
   }
 
+  // setter
+  public void setLingkaran(int x){
+    this.x = x;
+  }
+  
   @Override
   double luas() {
     return Math.PI * (x * x) * 1d;

@@ -7,6 +7,12 @@ public class Silinder extends BangunRuang {
     // x = jari-jari alas, y = tinggi silinder
   }
 
+  // setter
+  public void setSilinder(int x, int y){
+    this.x = x;
+    this.y = y;
+  }
+
   @Override
   double luas() {
     return 2 * Math.PI * x * y + 2 * Math.PI * x * x;

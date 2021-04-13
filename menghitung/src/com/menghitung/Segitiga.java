@@ -7,6 +7,12 @@ public class Segitiga extends BangunDatar {
     // x = alas, y = tinggi
   }
 
+  // setter
+  public void setSegitiga(int x, int y){
+    this.x = x;
+    this.y = y;
+  }
+
   @Override
   double luas() {
     return 1d / 2 * x * y;
